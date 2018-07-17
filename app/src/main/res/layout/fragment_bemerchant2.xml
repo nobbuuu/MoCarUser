@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingLeft="18dp"
+    android:paddingRight="18dp"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="提示：为审核通过，请上传边框完整，照片清晰的证件照，上传图片大小建议在300kb以内。"
+        android:textSize="13sp"
+        android:textColor="@color/color666"
+        android:layout_marginTop="21dp"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp">
+
+        <RelativeLayout
+            android:id="@+id/addphoto_relay1"
+            android:layout_width="0dp"
+            android:layout_height="124dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_xuxian_coner">
+
+            <ImageView
+                android:id="@+id/addphoto_iv1"
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:id="@+id/addphoto_lay1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_sheet" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="营业执照"
+                    android:textColor="@color/color666"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/addphoto_relay2"
+            android:layout_width="0dp"
+            android:layout_height="124dp"
+            android:layout_marginLeft="18dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_xuxian_coner">
+
+            <ImageView
+                android:id="@+id/addphoto_iv2"
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:id="@+id/addphoto_lay2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_sheet" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="维修资质"
+                    android:textColor="@color/color666"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/addphoto_relay3"
+            android:layout_width="0dp"
+            android:layout_height="124dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_xuxian_coner">
+
+            <ImageView
+                android:id="@+id/addphoto_iv3"
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:id="@+id/addphoto_lay3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_sheet" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="店铺技师技术证照"
+                    android:textColor="@color/color666"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/addphoto_relay4"
+            android:layout_width="0dp"
+            android:layout_height="124dp"
+            android:layout_marginLeft="18dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_xuxian_coner">
+
+            <ImageView
+                android:id="@+id/addphoto_iv4"
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:id="@+id/addphoto_lay4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_sheet" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="店铺照片"
+                    android:textColor="@color/color666"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/dimen_left"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/select_iv"
+            android:layout_width="wrap_content"
+            android:src="@drawable/small_icon_radio_default"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="我已同意维修商协议"
+            android:textSize="12sp"
+            android:textColor="@color/color666"
+            android:layout_marginLeft="8dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/sure_tv"
+        style="@style/sure_btnstyle"
+        android:text="申请加盟"
+        android:layout_marginLeft="49dp"
+        android:layout_marginRight="49dp"
+        android:layout_marginTop="36dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="提示：提交信息后，三个工作日反馈结果"
+        android:textSize="12sp"
+        android:textColor="@color/color666"
+        android:layout_marginTop="18dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content" />
+</LinearLayout>

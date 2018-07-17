@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/root_lay"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/blue_them">
+
+        <RelativeLayout
+            android:id="@+id/back_relay"
+            android:layout_width="@dimen/dimen45"
+            android:layout_height="@dimen/dimen45"
+            android:layout_marginLeft="@dimen/dimen_left">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/nav_button_back" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的优惠券"
+            android:textColor="@color/white"
+            android:textSize="@dimen/titlesize" />
+        <TextView
+            android:id="@+id/foruse_tv"
+            android:layout_width="wrap_content"
+            android:text="如何使用？"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_left"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:visibility="visible"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="40dp">
+        <LinearLayout
+            android:id="@+id/canUselayout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:text="可用优惠券"
+                android:textSize="15sp"
+                android:textColor="@color/color333"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_height="0dp" />
+            <RelativeLayout
+                android:id="@+id/line1"
+                android:layout_width="101dp"
+                android:background="@color/fengexian4"
+                android:layout_gravity="center"
+                android:layout_height="2dp"></RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/noUseLayout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:text="已失效优惠券"
+                android:textSize="15sp"
+                android:textColor="@color/color333"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_height="0dp" />
+            <RelativeLayout
+                android:id="@+id/line2"
+                android:layout_width="101dp"
+                android:background="@color/white"
+                android:layout_gravity="center"
+                android:layout_height="2dp"></RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mycards_vp"
+        android:layout_width="match_parent"
+        android:background="@color/moren_f2"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+</LinearLayout>

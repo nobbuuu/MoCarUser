@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.dream.moka">
+
+    <!-- 常见通用权限 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <!-- 高德地图权限 -->
+    <!-- //地图包、搜索包需要的基础权限 -->
+    <!-- 允许程序打开网络套接字 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- 允许程序设置内置sd卡的写权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- 允许程序获取网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- 允许程序访问WiFi网络信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!-- 允许程序读写手机状态和身份 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- 允许程序访问CellID或WiFi热点来获取粗略的位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!-- 允许程序改变网络连接状态 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+
+    <!-- shareSdk权限 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <!-- 【必须】 信鸽SDK所需权限 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <!-- 【常用】 信鸽SDK所需权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <!-- 【可选】 信鸽SDK所需权限 -->
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BATTERY_STATS"/>
+
+    <!-- IM -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name="com.dream.moka.Other.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        tools:replace="android:theme"
+        android:theme="@style/AppTheme">
+
+        <!-- smsAct -->
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <!-- 通过AndroidManifest配置AppKey和AppSecret，如果你选择通过代码配置，则不需要配置以下meta-data -->
+        <meta-data
+            android:name="Mob-AppKey"
+            android:value="22550e53501c3"/>
+        <meta-data
+            android:name="Mob-AppSecret"
+            android:value="b1737a4b6e3c97420ca45a3ba339f085"/>
+
+        <activity
+            android:name="cn.sharesdk.tencent.qq.ReceiveActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:scheme="tencent1106460153"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.dream.moka.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <service android:name="com.amap.api.location.APSService"/>
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="7cd37eb9c8b04e638396a25df7ab1511"/>
+
+        <!-- 支付宝 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <!-- 微信 -->
+        <activity
+            android:name="com.dream.moka.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"/>
+        <!-- 信鸽 -->
+        <receiver
+            android:name="com.dream.moka.Push.XinGeMessageReciver"
+            android:exported="true">
+            <intent-filter>
+
+                <!-- 接收消息透传 -->
+                <action android:name="com.tencent.android.tpush.action.PUSH_MESSAGE"/>
+                <!-- 监听注册、反注册、设置/删除标签、通知被点击等处理结果 -->
+                <action android:name="com.tencent.android.tpush.action.FEEDBACK"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- IM -->
+        <!-- 消息收发service -->
+        <service
+            android:name="com.tencent.qalsdk.service.QalService"
+            android:exported="false"
+            android:process=":QALSERVICE">
+        </service>
+        <!-- 消息收发辅助service -->
+        <service
+            android:name="com.tencent.qalsdk.service.QalAssistService"
+            android:exported="false"
+            android:process=":QALSERVICE">
+        </service>
+        <!-- 离线消息广播接收器 -->
+        <receiver
+            android:name="com.tencent.qalsdk.QALBroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.tencent.qalsdk.broadcast.qal"/>
+            </intent-filter>
+        </receiver>
+        <!-- 系统消息广播接收器 -->
+        <receiver
+            android:name="com.tencent.qalsdk.core.NetConnInfoCenter"
+            android:process=":QALSERVICE">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_SET"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+
+        <activity android:name="com.dream.moka.UI.Activity.login_register.SplahActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.dream.moka.UI.Activity.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.dream.moka.UI.Activity.login_register.RegisterActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.login_register.SetPwdActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.login_register.LoginActivity"
+                  android:windowSoftInputMode="adjustPan"
+            />
+        <activity
+            android:name="com.dream.moka.UI.Activity.maintain.OnekeyMaintainActivity"
+            android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.dream.moka.UI.Activity.SureOrderActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.CommonQuestionActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.CityChooseActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.UserInfoActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.set.ChangephoneActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.ChangeUserInfoActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.PayOpenServiceActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.PurseJifenActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.drivercenter.RechargeActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.MyCardsActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.set.SetActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.address.AddressActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.AddTicketsZZActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.mycar.MyCarsActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.mycar.CarInfoActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.OrderManageActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.OrderDetailActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.AboutUsActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.set.PayPwdActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.ChangePwdActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.FeedBackActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.set.UserXieYiActivity"
+                  android:launchMode="singleTask"
+            />
+        <activity android:name="com.dream.moka.UI.Activity.VersionUpdateActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.DriverInfoActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.EnterTimeActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.OrderPayActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.RefundActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.DaiJiaActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.login_register.ResetPwdActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.mycar.CarsChooseActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.mycar.CarConfigActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.mycar.AddMyCarActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.RepairShopRvActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.InvoiceActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.BeDriverWebActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.mycar.CarInfoInputActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.maintain.FreeMaitainActivity"
+                  android:windowSoftInputMode="adjustNothing"
+            />
+        <activity android:name="com.dream.moka.UI.Activity.TuoCarActivity"/>
+        <activity
+            android:name="com.dream.moka.UI.Activity.BeDriverActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.dream.moka.UI.Activity.HuodongRvActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.Message.MessageRvActivity"
+                  android:launchMode="singleTask"
+            />
+        <activity android:name="com.dream.moka.UI.Activity.Message.MessageDetailSureOrderActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.Message.MessageOrderCompleteActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.Message.MessageSpecialActivity"
+                  android:launchMode="singleTask"
+            />
+        <activity android:name="com.dream.moka.UI.Activity.IndustryDynamicsRvActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.BeMerchantActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.ChatMyActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.FeedBackServiceActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.ServiceKeeperRvActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.drivercenter.DriverCenterActivity"
+                  android:launchMode="singleTask"
+            />
+        <activity android:name="com.dream.moka.UI.Activity.GotoGetCarActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.DriverOrderDetailActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.GetCaredInputActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.DriverOrderDetail2Activity"/>
+        <activity android:name="com.dream.moka.UI.Activity.GuijiMapActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.drivercenter.DriverPurseActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.drivercenter.DriverPurseDetaileActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.drivercenter.ChangeBankCardActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.drivercenter.AddBankCardActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.drivercenter.BanksRvActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.drivercenter.AuditActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.drivercenter.DriverEquityActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.drivercenter.WithDrawalActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.drivercenter.DataStaticsActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.QrCodeActivtiy"/>
+        <activity android:name="com.dream.moka.UI.Activity.drivercenter.DriverUserInfoActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.WebActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.address.AddAndEditAddressActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.address.ChoosePointForMapActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.mycar.BaoxianActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.maintain.OneChooseCarActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.set.SetIDcardActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.other.OpenServiceActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.MerchantDetailActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.set.SetNewPhoneActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.AppraiseActivity"/>
+        <activity android:name="com.dream.moka.UI.order.OrderPaySuccessActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.UseCardActivity"/>
+        <activity android:name="com.dream.moka.UI.Activity.other.WebViewActivity">
+        </activity>
+        <activity android:name="com.dream.moka.UI.Activity.Message.OrderAddMaintainActivity"
+                  android:launchMode="singleTask"
+            >
+        </activity>
+        <activity android:name="com.dream.moka.UI.Activity.other.SpaceImageDetailActivity">
+        </activity>
+        <activity android:name="com.dream.moka.UI.Activity.Message.IncreaceSureOrderActivity">
+        </activity>
+        <activity android:name=".UI.Activity.InCompanyRvActivity">
+        </activity>
+        <activity android:name=".IM.im.activity.ChatActivity"
+                  android:launchMode="singleTask">
+        </activity>
+        <activity android:name=".IM.im.activity.ImageViewActivity">
+        </activity>
+        <activity android:name=".IM.im.activity.ImagePreviewActivity">
+        </activity>
+        <activity android:name=".UI.Activity.other.DynamicActivity">
+        </activity>
+        <receiver android:name=".Receivers.DownloadReceiver">
+
+        </receiver>
+        <service android:name=".Service.DownLoadService">
+        </service>
+    </application>
+
+</manifest>

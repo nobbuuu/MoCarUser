@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_marginTop="10dp"
+              android:gravity="center_vertical"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/keeper_iv"
+        android:layout_width="48dp"
+        android:layout_margin="@dimen/dimen_left"
+        android:background="@mipmap/img_avatar01"
+        android:layout_height="48dp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/keeper_iv"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/serviceName_Tv"
+            android:layout_width="wrap_content"
+            android:text="保养管家1086"
+            android:textSize="15sp"
+            android:textColor="@color/color666"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/date_Tv"
+            android:layout_width="wrap_content"
+            android:text="2017-12-30   12:30"
+            android:layout_marginTop="@dimen/dimen_left"
+            android:textSize="12sp"
+            android:textColor="@color/color999"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:layout_width="1dp"
+        android:background="@color/colorcc"
+        android:layout_toLeftOf="@+id/baoy_tv"
+        android:layout_centerVertical="true"
+        android:layout_height="36dp"></View>
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/baoy_tv"
+            android:layout_width="wrap_content"
+            android:text="保养"
+            android:textSize="15sp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/color666"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

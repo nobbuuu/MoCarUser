@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/dimen_left"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/product_itemTv"
+        android:layout_width="wrap_content"
+        android:text="机油"
+        android:textColor="@color/color666"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginTop="14dp"
+        android:background="@color/fengexiand9"
+        android:layout_height="0.5dp"></View>
+    <com.dream.moka.CumstomView.MyRecyclerView
+        android:id="@+id/productdetail_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.dream.moka.CumstomView.MyRecyclerView>
+
+</LinearLayout>

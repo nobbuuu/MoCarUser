@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <stroke
+        android:dashGap="2dp"
+        android:dashWidth="2dp"
+        android:width="0.5dp"
+        android:color="@color/fengexiand9" />
+    <solid android:color="@color/white"></solid>
+    <corners android:radius="4dp"></corners>
+    <!-- 虚线的高度 -->
+    <size android:height="0.5dp" />
+</shape>

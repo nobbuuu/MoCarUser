@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_toLeftOf="@+id/right_iv"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="13dp"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/dyName_tv"
+            android:layout_width="wrap_content"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="@color/color333"
+            android:layout_marginLeft="@dimen/dimen_left"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="@dimen/dimen_left"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/time_tv"
+                android:layout_width="wrap_content"
+                android:textColor="@color/color333"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_toLeftOf="@+id/readNum_tv"
+                android:layout_width="wrap_content"
+                android:src="@mipmap/yellow_icon_eye"
+                android:layout_marginRight="8dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/readNum_tv"
+                android:layout_width="wrap_content"
+                android:textColor="@color/color333"
+                android:text="0"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/right_iv"
+        android:layout_width="98.5dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/dimen_left"
+        android:layout_centerVertical="true"
+        android:layout_height="71.5dp" />
+</RelativeLayout>

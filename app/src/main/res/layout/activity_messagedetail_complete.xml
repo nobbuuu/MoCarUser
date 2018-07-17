@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="尊敬的客户您好"
+        android:textColor="@color/color333"
+        android:layout_margin="@dimen/dimen_left"
+        android:textSize="15sp"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/fengexiand9"
+        android:layout_marginRight="@dimen/dimen_left"
+        android:layout_marginLeft="@dimen/dimen_left"
+        android:layout_height="0.5dp"></View>
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="你在摩喀洗车保养的奔驰2017款6245212MATIC 运动型已保养完成"
+        android:textColor="@color/color666"
+        android:layout_marginLeft="@dimen/dimen_left"
+        android:layout_marginTop="@dimen/dimen_left"
+        android:layout_marginRight="27dp"
+        android:lineSpacingExtra="9dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="2017-12-20"
+        android:layout_marginTop="106dp"
+        android:layout_gravity="end"
+        android:layout_marginRight="50dp"
+        android:textColor="@color/color666"
+        android:textSize="13sp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="摩喀汽车服务有限公司"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="end"
+        android:layout_marginRight="23dp"
+        android:textColor="@color/color666"
+        android:textSize="13sp"
+        android:layout_height="wrap_content" />
+</LinearLayout>

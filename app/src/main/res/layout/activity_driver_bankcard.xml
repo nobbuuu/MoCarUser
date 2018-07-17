@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/cardLayout"
+        android:layout_width="match_parent"
+        android:background="@mipmap/img_background"
+        android:layout_marginTop="@dimen/dimen15"
+        android:layout_marginLeft="@dimen/dimen_left"
+        android:layout_marginRight="@dimen/dimen_left"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/bankName"
+            android:layout_width="wrap_content"
+            android:text=""
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="25dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/bankCardType"
+            android:layout_width="wrap_content"
+            android:text="储蓄卡"
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="11dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/bankCardNo"
+            android:layout_width="wrap_content"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="21sp"
+            android:layout_marginTop="@dimen/dimen_left"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/changecard_lay"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="25dp"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/shape_xuxian_coner"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@mipmap/icon_change"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/change_txt"
+            android:layout_width="wrap_content"
+            android:text="更换银行卡"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/coloryellow"
+            android:textSize="15sp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

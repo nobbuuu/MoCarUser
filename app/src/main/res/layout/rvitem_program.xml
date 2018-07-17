@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="6dp"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/service_topRelay"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dimen_left"
+        android:layout_height="46dp">
+        <RelativeLayout
+            android:id="@+id/select_relay"
+            android:layout_width="28dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/select_iv"
+                android:layout_width="wrap_content"
+                android:src="@mipmap/icon_radio_default"
+                android:layout_marginLeft="@dimen/dimen_left"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/program_name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/color333"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/money"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/color333"
+            android:layout_marginRight="@dimen/dimen_left"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/pro_lay"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <include layout="@layout/view_fengexian"></include>
+        <com.dream.moka.CumstomView.MyRecyclerView
+            android:id="@+id/product_rv"
+            android:layout_width="match_parent"
+            android:paddingLeft="@dimen/dimen_left"
+            android:paddingRight="@dimen/dimen_left"
+            android:layout_height="wrap_content"></com.dream.moka.CumstomView.MyRecyclerView>
+    </LinearLayout>
+</LinearLayout>

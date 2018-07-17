@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="main_bg">#AA53BE</color>
+    <color name="statubar_bg">#984BCD</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="alpha50">#80000000</color>
+    <color name="white_alpha20">#33ffffff</color>
+    <color name="white_alpha64">#a6ffffff</color>
+    <color name="white_alpha5">#0dffffff</color>
+    <color name="black_alpha24">#40000000</color>
+    <color name="black_alpha20">#33000000</color>
+    <color name="black_alpha10">#1a000000</color>
+    <color name="black_alpha5">#0d000000</color>
+    <color name="black_alpha">#cc000000</color>
+    <color name="transpant">#00FFFFFF</color>
+    <color name="fengexiane8">#e8e8e8</color>
+    <color name="white_alpha80">#ccffffff</color>
+    <color name="tip_bg">#2F151E</color>
+    <color name="fengexian">#E5E5E5</color>
+    <color name="main_botcandy">#fb9598</color>
+    <color name="main_botblack">#616060</color>
+    <color name="voice_switch">#6f6f6f</color>
+    <color name="blue_them">#1b82d2</color>
+    <color name="blue_themalpha60">#991b82d2</color>
+    <color name="blue_xieyi">#3399CC</color>
+    <color name="yellow_login">#f9ab37</color>
+    <color name="color333">#333333</color>
+    <color name="color666">#666666</color>
+    <color name="color999">#999999</color>
+    <color name="red">#FF0000</color>
+    <color name="colorcc">#CCCCCC</color>
+    <color name="colorcd">#cdcdcd</color>
+    <color name="textyellow">#ffa011</color>
+    <color name="voice_pre">#e1e1e1</color>
+    <color name="colorf8">#f8f8f8</color>
+
+    <!-- 画面背景色 -->
+    <drawable name="layout_backgroud">#000000</drawable>
+
+    <!-- 分割线背景色 -->
+    <drawable name="line_background">#161823</drawable>
+
+    <!-- 控件按下时显示的颜色 -->
+    <color name="list_backgroud_color">#2fb3cb</color>
+    <color name="title_color">#0f8ec5</color>
+    <color name="content_color">#737373</color>
+
+    <color name="them_color1">#f5707f</color>
+    <color name="them_color2">#984bce</color>
+    <color name="them_color3">#7b2dae</color>
+    <color name="them_color4">#be3049</color>
+    <color name="them_color5">#e662b0</color>
+    <color name="them_color6">#fbb8df</color>
+    <color name="function_title">#fb9699</color>
+
+    <color name="them_color7">#939393</color>
+    <color name="them_color8">#353535</color>
+
+    <color name="text_color">#4e4e4e</color>
+    <color name="color98">#989898</color>
+    <color name="layou_mrbg">#eeeeee</color>
+    <color name="candy">#ea69a2</color>
+    <color name="gqblack">#2a2625</color>
+    <color name="sure_btncolor">#ef8181</color>
+    <color name="exit_candy">#fd7d7c</color>
+    <color name="exit_black">#535353</color>
+    <color name="statu_diwen">#626262</color>
+    <color name="wechat_voice">#d3d3d3</color>
+    <color name="func_text">#3d3d3d</color>
+    <color name="anm_black">#6A6A6A</color>
+    <color name="anm_candy">#b55465</color>
+
+    <color name="version_liji">#EAB300</color>
+    <color name="version_top_back">#F6F6F6</color>
+    <color name="fengexian1">#BABABA</color>
+    <color name="fengexian2">#B2B2B2</color>
+    <color name="fengexian3">#1975bd</color>
+    <color name="fengexian4">#f4a114</color>
+    <color name="fengexian5">#d8d8d8</color>
+    <color name="inputstoke">#A0A0A0</color>
+    <color name="fengexiand9">#d9d9d9</color>
+    <color name="moren_bg">#F5F5F5</color>
+    <color name="moren_f2">#F2F2F2</color>
+    <color name="moren_f2alpha50">#80F2F2F2</color>
+    <color name="moren_f6">#F6F6F6</color>
+    <color name="moren_e5">#e5e5e5</color>
+    <color name="kuaibao">#ff6600</color>
+    <color name="coloryellow">#ff9900</color>
+    <color name="guijiyellow">#f39800</color>
+
+    <!--//im-->
+    <color name="line_btn">#BBBBBB</color>
+    <color name="background_gray1">#EBEBEB</color>
+    <color name="background_gray2">#E6E6E6</color>
+    <color name="background_gray3">#D4D4D4</color>
+    <color name="background_gray4">#EFEFF4</color>
+    <color name="text_gray1">#777777</color>
+    <color name="text_gray2">#767676</color>
+    <color name="text_blue1">#1173CB</color>
+    <color name="text_blue2">#1173CA</color>
+    <color name="panel_black">#25272A</color>
+    <color name="btn_red">#D63F41</color>
+    <color name="btn_red_hover">#E8484B</color>
+    <color name="btn_blue">#0F73CB</color>
+    <color name="btn_blue_hover">#1E86E4</color>
+    <color name="btn_text">#FFFFFF</color>
+    <color name="btn_text_hover">#CCFFFFFF</color>
+    <!--分割线颜色灰-->
+    <color name="color_cccccc">#CCCCCC</color>
+    <!--分割线颜色d9d9d9-->
+    <color name="color_line">#d9d9d9</color>
+    <!--白色-->
+    <color name="color_ffffff">#FFFFFF</color>
+    <!--背景底色-->
+    <color name="color_empty_bg">#F2F2F2</color>
+    <!--导航条颜色-->
+    <color name="color_1b82d2">#1b82d2</color>
+    <!--333的字体颜色-->
+    <color name="color_333333">#333333</color>
+    <!--666666的字体颜色 -->
+    <color name="color_666666">#666666</color>
+    <!--999999的字体颜色 -->
+    <color name="color_999999">#666666</color>
+    <!--b2b2b2的颜色  描边-->
+    <color name="color_b2b2b2">#b2b2b2</color>
+    <!--指示器颜色黄-->
+    <color name="color_ea9c1f">#ea9c1f</color>
+    <!--文字黄色-->
+    <color name="color_ff9900">#ff9900</color>
+
+
+    <!--覆盖颜色-->
+    <color name="bgColor_overlay">#60000000</color>
+    <!--窗口背景颜色-->
+    <color name="bgColor_content_center">#fffefe</color>
+    <!--标题颜色-->
+    <color name="textColor_center_title">#000000</color>
+    <color name="textColor_downSheet_title">#8f8f8f</color>
+    <!--消息颜色-->
+    <color name="textColor_center_msg">#000000</color>
+    <color name="textColor_downSheet_msg">#8f8f8f</color>
+    <!--线条颜色-->
+    <color name="bgColor_divier">#d7d7db</color>
+    <!--取消按钮颜色-->
+    <color name="textColor_alert_button_cancel">#007aff</color>
+    <!--普通按钮文字颜色-->
+    <color name="textColor_alert_button_others">#007aff</color>
+    <!--点击颜色-->
+    <color name="bgColor_item_press">#e9e6e6</color>
+
+    <color name="transparent">#00000000</color>
+
+
+    <color name="background">#F9F7F8</color>
+    <color name="line">#DDDDDD</color>
+    <!--蒙版-->
+    <color name="colorMask">#66000000</color>
+
+    <!--gray7-->
+    <color name="colorGray7">#D8D8D8</color>
+    <color name="c8">#FFFFFF</color>
+</resources>

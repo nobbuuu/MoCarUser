@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:src="@mipmap/icon_audit"
+            android:layout_marginTop="67dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:text="正在审核中"
+            android:textSize="17sp"
+            android:textColor="@color/color333"
+            android:layout_marginTop="33dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:text="申请人：摩喀大佬"
+            android:textSize="15sp"
+            android:textColor="@color/color333"
+            android:layout_marginTop="18dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/icCard"
+            android:layout_width="wrap_content"
+            android:text="身份证号：522321199412042518"
+            android:textSize="15sp"
+            android:textColor="@color/color333"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:text="您提交申请资料后，审核时间预计3~7个工作日"
+            android:textColor="@color/color666"
+            android:layout_marginTop="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_height="wrap_content" />
+        <CheckBox
+            android:id="@+id/read"
+            android:layout_width="wrap_content"
+            android:text="阅读并同意"
+            android:textSize="12sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/color666"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/call_service"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        android:textSize="12sp"
+        android:textColor="@color/color666"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

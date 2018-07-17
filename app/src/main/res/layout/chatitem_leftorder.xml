@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="14dp"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="46.5dp"
+        android:src="@drawable/icon_avatar"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="@dimen/dimen_left"
+        android:layout_height="46.5dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="保养专家1806"
+                android:textSize="11sp"
+                android:textColor="@color/color999"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="(人工服务时间为早上：9:00~晚上21:00）"
+                android:textSize="10sp"
+                android:textColor="@color/color999"
+                android:layout_marginLeft="8dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="@dimen/dimen_left"
+            android:paddingRight="@dimen/dimen_left"
+            android:background="@drawable/shape_white_corner"
+            android:layout_marginRight="50dp"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@mipmap/small_icon_order"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="汽车初次保养清单"
+                android:textSize="13sp"
+                android:textColor="@color/color666"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

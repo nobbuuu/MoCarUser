@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:overScrollMode="never"
+    android:layout_height="match_parent"
+    android:id="@+id/parentView">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/moren_f2"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="服务提示："
+                android:textColor="@color/coloryellow"
+                android:layout_marginLeft="@dimen/dimen_left"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="在取车时，请注意车内贵重物品，车辆外观、行驶里程和油量"
+                android:textColor="@color/color666"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/dimen_left"
+            android:paddingRight="@dimen/dimen_left"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="订单信息"
+                    android:textSize="15sp"
+                    android:textColor="@color/color333"
+                    android:layout_marginLeft="@dimen/dimen_left"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginBottom="14dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/orderNo_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_left"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <include layout="@layout/view_fengexian"></include>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="13dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="车牌号"
+                    android:textColor="@color/color333"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/carNo_tv"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/color666"
+                    android:layout_marginLeft="33dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="13dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="车辆"
+                    android:textColor="@color/color333"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/car_name"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/color666"
+                    android:layout_marginLeft="47dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <include layout="@layout/view_fengexian"></include>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="13dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/sendName_tv"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/color666"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/sendMobile_tv"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/color666"
+                    android:layout_marginLeft="16dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="13dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/sendAddress_tv"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/color666"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/navBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="导航"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/shape_stroke_input"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <include layout="@layout/view_fengexian"></include>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="维修商信息"
+                android:layout_marginTop="15dp"
+                android:textSize="15sp"
+                android:textColor="@color/color333"
+                android:layout_marginBottom="15dp"
+                android:layout_height="wrap_content" />
+            <include layout="@layout/view_fengexian"></include>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="13dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/shopName_tv"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/color666"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/shopPhone_tv"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/color666"
+                    android:layout_marginLeft="16dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="13dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/shopAddress_tv"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/color666"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginBottom="13dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/navBtn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="导航"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/shape_stroke_input"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <include layout="@layout/view_fengexian"></include>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="派单时间"
+                    android:textSize="15sp"
+                    android:textColor="@color/color333"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/getOrder_dateTv"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:textColor="@color/color666"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/sure_tv"
+            android:text="下一步"
+            android:layout_marginTop="36dp"
+            style="@style/sure_btnstyle"
+            android:layout_marginBottom="20dp"
+            />
+    </LinearLayout>
+</ScrollView>

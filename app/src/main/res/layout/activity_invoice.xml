@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/moren_f2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dimen_left">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="发票类型"
+            android:textColor="@color/color333"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_left">
+
+            <TextView
+                android:id="@+id/common_invoice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_stroke_chonzhi"
+                android:paddingBottom="4dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="4dp"
+                android:text="普通发票"
+                android:textColor="@color/color666"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/zzinvoice_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:background="@drawable/shape_stroke_a0"
+                android:paddingBottom="4dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="4dp"
+                android:text="增值税专用发票"
+                android:textColor="@color/color666"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/zztip_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="19dp"
+            android:layout_marginTop="10dp"
+            android:text="如需开据增值税纸质发票，需要支付相应的快递费用"
+            android:textColor="@color/color666"
+            android:textSize="13sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/common_invoicelay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="@dimen/dimen_left">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_stroke_a0"
+                        android:orientation="vertical"
+                        android:padding="@dimen/dimen_left">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="电子发票 即增值税普通发票的电子版，可支持报销入账其法律效力，基本用途及使用规定与普通纸质发票相同"
+                            android:textColor="@color/color666" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="18dp"
+                            android:text="电子发票与4s店维修/保养工单皆可作为保修凭证" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dimen_left">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="发票抬头"
+                        android:textColor="@color/color333"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true">
+
+                        <ImageView
+                            android:id="@+id/geren_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/icon_radio_selected" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:text="个人"
+                            android:textColor="@color/color666" />
+
+                        <ImageView
+                            android:id="@+id/companey_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="24dp"
+                            android:src="@mipmap/icon_radio_default" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:text="公司"
+                            android:textColor="@color/color666" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/people_edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/shape_stroke_a0"
+                        android:hint="请填写个人姓名"
+                        android:paddingLeft="13dp"
+                        android:textColorHint="@color/color999"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/taxpayer_tv_nomal"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/shape_stroke_a0"
+                        android:hint="请填写纳税人识别号"
+                        android:paddingLeft="13dp"
+                        android:textColorHint="@color/color999"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dimen_left">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="发票内容"
+                        android:textColor="@color/color333"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/content_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_left"
+                        android:text="维修费"
+                        android:textColor="@color/color666" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="14dp"
+                        android:layout_marginLeft="@dimen/dimen_left"
+                        android:layout_marginTop="14dp"
+                        android:text="收票人信息"
+                        android:textColor="@color/color333" />
+                </LinearLayout>
+
+                <include layout="@layout/view_fengexian"></include>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="@dimen/dimen_left"
+                        android:layout_marginTop="15dp"
+                        android:text="手机号"
+                        android:textColor="@color/color333" />
+
+                    <EditText
+                        android:id="@+id/phone_edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="65dp"
+                        android:layout_marginRight="@dimen/dimen_left"
+                        android:background="@null"
+                        android:hint="请输入收票人手机号"
+                        android:inputType="phone"
+                        android:textColorHint="@color/color666"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <include layout="@layout/view_fengexian"></include>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="@dimen/dimen_left"
+                        android:layout_marginTop="15dp"
+                        android:text="邮箱（必填）"
+                        android:textColor="@color/color333" />
+
+                    <EditText
+                        android:id="@+id/email_edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="23dp"
+                        android:layout_marginRight="@dimen/dimen_left"
+                        android:background="@null"
+                        android:hint="请输入电子邮箱"
+                        android:inputType="textEmailAddress"
+                        android:textColorHint="@color/color666"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <include layout="@layout/view_fengexian"></include>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/zzticket_lay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:paddingBottom="@dimen/dimen_left"
+                    android:paddingTop="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dimen_left"
+                        android:text="发票递送地址"
+                        android:textColor="@color/color333"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <include layout="@layout/view_fengexian"></include>
+
+                <LinearLayout
+                    android:id="@+id/address_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13dp">
+
+                        <TextView
+                            android:id="@+id/name_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/color666" />
+
+                        <TextView
+                            android:id="@+id/phone_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="82dp"
+                            android:textColor="@color/color666" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13dp"
+                        android:paddingBottom="13dp">
+
+                        <ImageView
+                            android:id="@+id/address_iv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/icon_address" />
+
+                        <TextView
+                            android:id="@+id/address_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="9dp"
+                            android:layout_toRightOf="@+id/address_iv"
+                            android:text="请选择发票递送地址"
+                            android:textColor="@color/color666" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <include layout="@layout/view_fengexian"></include>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="11dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="快递费"
+                        android:textColor="@color/color333" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/dimen_left"
+                        android:text="¥12"
+                        android:textColor="#cc0000" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/invoiceinfo_relay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="13dp"
+                    android:paddingTop="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="发票详情"
+                        android:textColor="@color/color333" />
+
+                    <TextView
+                        android:id="@+id/nexttip_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="50dp"
+                        android:text="必填"
+                        android:textColor="@color/color666"
+                        android:textSize="12sp" />
+
+                    <ImageView style="@style/imgstyle_next" />
+                </RelativeLayout>
+
+                <include layout="@layout/view_fengexian"></include>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="13dp"
+                    android:paddingTop="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="单位名称"
+                        android:textColor="@color/color333" />
+
+                    <TextView
+                        android:id="@+id/company_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="50dp"
+                        android:textColor="@color/color666"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/view_fengexian"></include>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="13dp"
+                    android:paddingTop="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="纳税人识别号"
+                        android:textColor="@color/color333" />
+
+                    <TextView
+                        android:id="@+id/taxpayer_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="50dp"
+                        android:textColor="@color/color666"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/view_fengexian"></include>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="13dp"
+                    android:paddingTop="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="注册电话"
+                        android:textColor="@color/color333" />
+
+                    <TextView
+                        android:id="@+id/regiPhone_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="50dp"
+                        android:textColor="@color/color666"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/view_fengexian"></include>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="13dp"
+                    android:paddingTop="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="注册地址"
+                        android:textColor="@color/color333" />
+
+                    <TextView
+                        android:id="@+id/regiAddress_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="50dp"
+                        android:textColor="@color/color666"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/view_fengexian"></include>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="13dp"
+                    android:paddingTop="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="开户银行"
+                        android:textColor="@color/color333" />
+
+                    <TextView
+                        android:id="@+id/bankName_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="50dp"
+                        android:textColor="@color/color666"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/view_fengexian"></include>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="13dp"
+                    android:paddingTop="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="银行账户"
+                        android:textColor="@color/color333" />
+
+                    <TextView
+                        android:id="@+id/bankNum_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="50dp"
+                        android:textColor="@color/color666"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/view_fengexian"></include>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/sure_tv"
+                style="@style/sure_btnstyle"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="@dimen/dimen_left"
+                android:text="确定" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

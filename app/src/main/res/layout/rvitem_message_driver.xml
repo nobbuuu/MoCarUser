@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/head_icon"
+            android:layout_width="@dimen/head_size"
+            android:src="@mipmap/img_avatar01"
+            android:layout_margin="@dimen/dimen_left"
+            android:scaleType="centerCrop"
+            android:layout_height="@dimen/head_size" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_toRightOf="@id/head_icon"
+            android:layout_toLeftOf="@+id/right_tv"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="平台消息"
+                android:textColor="@color/color333"
+                android:textSize="15sp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="李师傅您有一笔新的佣金到账"
+                android:layout_marginTop="11dp"
+                android:textColor="@color/color666"
+                android:textSize="14sp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/right_tv"
+            android:layout_width="wrap_content"
+            android:text="09:30"
+            android:textSize="13sp"
+            android:textColor="@color/color999"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginRight="@dimen/dimen_left"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>

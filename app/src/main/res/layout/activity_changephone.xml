@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/yzm_lay"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="66dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="手机号码"
+                    android:textColor="@color/color333"
+                    android:layout_marginLeft="23dp"
+                    android:layout_gravity="bottom"
+                    android:textSize="14sp"
+                    android:layout_height="wrap_content" />
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"></TableLayout>
+
+                <EditText
+                    android:id="@+id/phone_edt"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:textSize="12sp"
+                    android:hint="输入手机号"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:background="@null"
+                    android:layout_marginRight="@dimen/dimen_left"
+                    android:layout_gravity="bottom"
+                    android:layout_height="35dp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line_phone"
+                android:layout_width="match_parent"
+                android:background="@color/blue_them"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:layout_height="0.5dp"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/dimen_left"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="23dp"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="验证码"
+                            android:textSize="14sp"
+                            android:textColor="@color/color333"
+                            android:layout_height="wrap_content" />
+
+                        <EditText
+                            android:id="@+id/code_number"
+                            android:layout_width="match_parent"
+                            android:hint="输入验证码"
+                            android:textSize="12sp"
+                            android:background="@null"
+                            android:layout_marginLeft="30dp"
+                            android:layout_height="35dp" />
+                    </LinearLayout>
+                    <View
+                        android:id="@+id/line_yzm"
+                        android:layout_width="match_parent"
+                        android:background="@color/fengexian1"
+                        android:layout_height="0.5dp"></View>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:background="@color/fengexian1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_height="match_parent"></View>
+                <LinearLayout
+                    android:id="@+id/getyzm_lay"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginRight="23dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/time"
+                        android:layout_width="match_parent"
+                        android:text="获取验证码"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:textColor="@color/color333"
+                        android:layout_height="35dp" />
+                    <View
+                        android:id="@+id/line_getyzm"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/fengexian1"
+                        android:layout_height="0.5dp"></View>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/next_tv"
+            android:layout_width="match_parent"
+            android:text="下一步"
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_marginTop="36dp"
+            android:layout_marginLeft="66dp"
+            android:layout_marginRight="66dp"
+            android:background="@drawable/shape_login_btn"
+            android:layout_height="36dp" />
+        <LinearLayout
+            android:id="@+id/tip_tv"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="18dp"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="原手机号码不能接受验证码"
+                android:textSize="12sp"
+                android:textColor="@color/blue_xieyi"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </LinearLayout>
+   <TextView
+       android:id="@+id/call_service"
+       android:layout_width="wrap_content"
+       android:text="联系客服"
+       android:layout_alignParentBottom="true"
+       android:layout_centerHorizontal="true"
+       android:layout_marginBottom="32dp"
+       android:textColor="@color/color666"
+       android:layout_height="wrap_content" />
+</RelativeLayout>

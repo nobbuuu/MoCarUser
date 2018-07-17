@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/head_iconrelay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/head_icon"
+            android:layout_width="35dp"
+            android:src="@mipmap/icon_avatar01"
+            android:scaleType="fitXY"
+            android:layout_margin="@dimen/dimen_left"
+            android:layout_height="35dp" />
+        <ImageView
+            style="@style/imgstyle_next" />
+    </RelativeLayout>
+    <include layout="@layout/view_fengexian"></include>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="姓名"
+            android:textSize="15sp"
+            android:textColor="@color/color333"
+            android:layout_marginLeft="@dimen/dimen_left"
+            android:layout_marginTop="@dimen/dimen15"
+            android:layout_marginBottom="@dimen/dimen15"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:text="刘健"
+            android:textSize="15sp"
+            android:textColor="@color/color666"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_left"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <include layout="@layout/view_fengexian"></include>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="服务电话"
+            android:textSize="15sp"
+            android:textColor="@color/color333"
+            android:layout_marginLeft="@dimen/dimen_left"
+            android:layout_marginTop="@dimen/dimen15"
+            android:layout_marginBottom="@dimen/dimen15"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:text="18277750576"
+            android:textSize="15sp"
+            android:textColor="@color/color666"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_left"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <include layout="@layout/view_fengexian"></include>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="报名城市"
+            android:textSize="15sp"
+            android:textColor="@color/color333"
+            android:layout_marginLeft="@dimen/dimen_left"
+            android:layout_marginTop="@dimen/dimen15"
+            android:layout_marginBottom="@dimen/dimen15"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="wrap_content"
+            android:text="深圳"
+            android:textSize="15sp"
+            android:textColor="@color/color666"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_left"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <include layout="@layout/view_fengexian"></include>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="司机类型"
+            android:textSize="15sp"
+            android:textColor="@color/color333"
+            android:layout_marginLeft="@dimen/dimen_left"
+            android:layout_marginTop="@dimen/dimen15"
+            android:layout_marginBottom="@dimen/dimen15"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:text="全职"
+            android:textSize="15sp"
+            android:textColor="@color/color666"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_left"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <!--<include layout="@layout/view_fengexian"></include>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="QQ"
+            android:textSize="15sp"
+            android:textColor="@color/color333"
+            android:layout_marginLeft="@dimen/dimen_left"
+            android:layout_marginTop="@dimen/dimen15"
+            android:layout_marginBottom="@dimen/dimen15"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/qq"
+            android:layout_width="wrap_content"
+            android:text="1184824553"
+            android:textSize="15sp"
+            android:textColor="@color/color666"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_left"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <include layout="@layout/view_fengexian"></include>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/moren_f2"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="驾驶证信息"
+            android:textSize="15sp"
+            android:textColor="@color/color333"
+            android:layout_marginLeft="@dimen/dimen_left"
+            android:layout_marginTop="@dimen/dimen15"
+            android:layout_marginBottom="@dimen/dimen15"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <include layout="@layout/view_fengexian"></include>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="驾驶证类型"
+            android:textSize="15sp"
+            android:textColor="@color/color333"
+            android:layout_marginLeft="@dimen/dimen_left"
+            android:layout_marginTop="@dimen/dimen15"
+            android:layout_marginBottom="@dimen/dimen15"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/car_type"
+            android:layout_width="wrap_content"
+            android:text="C1"
+            android:textSize="15sp"
+            android:textColor="@color/color666"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_left"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <include layout="@layout/view_fengexian"></include>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="驾驶证档案编号"
+            android:textSize="15sp"
+            android:textColor="@color/color333"
+            android:layout_marginLeft="@dimen/dimen_left"
+            android:layout_marginTop="@dimen/dimen15"
+            android:layout_marginBottom="@dimen/dimen15"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/carCardNo"
+            android:layout_width="wrap_content"
+            android:text="256186354681"
+            android:textSize="15sp"
+            android:textColor="@color/color666"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_left"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <include layout="@layout/view_fengexian"></include>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="初次领取驾驶证日期"
+            android:textSize="15sp"
+            android:textColor="@color/color333"
+            android:layout_marginLeft="@dimen/dimen_left"
+            android:layout_marginTop="@dimen/dimen15"
+            android:layout_marginBottom="@dimen/dimen15"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/getCardData"
+            android:layout_width="wrap_content"
+            android:text="2017-12-20"
+            android:textSize="15sp"
+            android:textColor="@color/color666"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_left"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <include layout="@layout/view_fengexian"></include>
+
+
+</LinearLayout>

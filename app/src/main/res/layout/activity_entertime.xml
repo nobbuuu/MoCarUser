@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/moren_f2"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="回车时间已经超时，是否按原地址送车"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:textSize="14sp"
+            android:textColor="@color/color333"
+            android:layout_marginLeft="@dimen/dimen_left"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@mipmap/icon_switch_default"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_left"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <include layout="@layout/view_fengexian"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingTop="14dp"
+        android:paddingLeft="@dimen/dimen_left"
+        android:paddingRight="@dimen/dimen_left"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="程长福"
+            android:textColor="@color/color666"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="150521641351"
+            android:layout_marginLeft="82dp"
+            android:textColor="@color/color666"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingTop="13dp"
+        android:paddingBottom="13dp"
+        android:paddingLeft="@dimen/dimen_left"
+        android:paddingRight="@dimen/dimen_left"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/address_iv"
+            android:layout_width="wrap_content"
+            android:src="@mipmap/icon_address"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/address_tv"
+            android:layout_width="wrap_content"
+            android:text="广东省 深圳市 宝安区 绿创云谷"
+            android:layout_toRightOf="@+id/address_iv"
+            android:layout_marginLeft="9dp"
+            android:textColor="@color/color666"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@mipmap/next_forward"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@mipmap/dizhixian"
+        android:layout_height="0.5dp"></RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/enter_tv"
+            android:layout_width="wrap_content"
+            android:text="选择回车时间"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="13dp"
+            android:layout_marginLeft="@dimen/dimen_left"
+            android:textSize="14sp"
+            android:textColor="@color/color666"
+            android:layout_height="wrap_content" />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:text="2017-10-12   12:30"
+            android:layout_centerInParent="true"
+            android:textSize="14sp"
+            android:textColor="@color/color666"
+            android:layout_toRightOf="@+id/enter_tv"
+            android:layout_marginLeft="35dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@mipmap/next_forward"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_left"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <TextView
+        style="@style/sure_btnstyle"
+        android:layout_marginTop="29dp"
+        android:text="确认回车" />
+</LinearLayout>

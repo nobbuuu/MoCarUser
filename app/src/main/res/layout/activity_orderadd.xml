@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/moren_f2"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/car_relay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="15dp"
+            >
+
+            <TextView
+                android:id="@+id/carBrand_nameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/color333"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/miles_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:text="法拉利"
+                android:textColor="@color/color666"
+                android:textSize="13sp"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/repairshop_relay"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:layout_width="2dp"
+                android:layout_height="14dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:background="@color/fengexian4"></RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="22dp"
+                android:text="维修商"
+                android:textColor="@color/color333"
+                android:textSize="15sp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dimen_left">
+
+                <TextView
+                    android:id="@+id/repairshop_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/right_iv1"
+                    android:text=""
+                    android:textColor="@color/color666"/>
+
+                <ImageView
+                    android:id="@+id/right_iv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_left"
+                    android:src="@mipmap/next_forward"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:layout_width="2dp"
+                android:layout_height="14dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:background="@color/fengexian4"></RelativeLayout>
+
+            <TextView
+                android:id="@+id/proName_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="22dp"
+                android:text="维修项目"
+                android:textColor="@color/color333"
+                android:textSize="15sp"/>
+        </RelativeLayout>
+
+        <include layout="@layout/view_fengexian"></include>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/program_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"></android.support.v7.widget.RecyclerView>
+
+        <RelativeLayout
+            android:id="@+id/second_relay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/summaryPrice_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="检测报价"
+                android:textColor="@color/color333"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/price_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/color333"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/otherPrice_relay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="其他工费"
+                android:textColor="@color/color333"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/otherPrice_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/color333"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/itprice_relay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="其他工时费"
+                android:textColor="@color/color333"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/itprice_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/color333"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/gz_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <include layout="@layout/view_fengexian"></include>
+
+            <TextView
+                android:id="@+id/sumName_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_left"
+                android:text="故障描述"
+                android:textColor="@color/blue_them"/>
+
+            <TextView
+                android:id="@+id/summary_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_left"
+                android:layout_marginLeft="@dimen/dimen_left"
+                android:layout_marginRight="@dimen/dimen_left"
+                android:textColor="@color/color333"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_relay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/view_fengexian"></include>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/xupay_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="合计"
+                android:textColor="@color/color333"
+                android:textSize="15sp"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/xupay_tv"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¥"
+                    android:textColor="@color/coloryellow"/>
+
+                <TextView
+                    android:id="@+id/ordermoney_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:textColor="@color/coloryellow"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/sure_tv"
+                android:layout_width="127dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/blue_them"
+                android:gravity="center"
+                android:text="下一步"
+                android:textColor="@color/white"
+                android:textSize="15sp"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

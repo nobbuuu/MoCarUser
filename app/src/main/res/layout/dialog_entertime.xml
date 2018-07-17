@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape_white_corner"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="回车时间"
+                android:textColor="@color/color666"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/fengexian"></RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/pop_relay1"
+                android:layout_width="match_parent"
+                android:layout_height="52dp">
+
+                <TextView
+                    android:id="@+id/pop_tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="即刻回车"
+                    android:textColor="@color/color333"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/fengexian"></RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/pop_relay2"
+                android:layout_width="match_parent"
+                android:layout_height="52dp">
+
+                <TextView
+                    android:id="@+id/pop_tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="准时回车"
+                    android:textColor="@color/color333"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/fengexian"></RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/pop_relay3"
+                android:layout_width="match_parent"
+                android:layout_height="52dp">
+
+                <TextView
+                    android:id="@+id/pop_tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="预约回车"
+                    android:textColor="@color/color333"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/quxiao"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape_white_corner">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="取消"
+                android:textColor="#007aff"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

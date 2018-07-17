@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/root_lay"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/title_relay"
+        android:layout_width="match_parent"
+        android:background="@color/blue_them"
+        android:layout_height="@dimen/title_height">
+        <RelativeLayout
+            android:id="@+id/back_relay"
+            style="@style/relaystyle_back">
+            <ImageView
+                style="@style/imgstyle_back" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/center_tv"
+            android:text="司机中心"
+            style="@style/textstyle_titlecenter" />
+        <ImageView
+            android:id="@+id/message_iv"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/home_icon_messages"
+            android:layout_marginRight="12dp"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/right_tv"
+            android:layout_width="wrap_content"
+            android:text="筛选"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_left"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/drivercenter_vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <FrameLayout
+            android:id="@+id/zezao_relay"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:background="@color/black_alpha"
+            android:layout_height="match_parent"/>
+        <include layout="@layout/pop_order_saixuan"/>
+    </RelativeLayout>
+    <include layout="@layout/view_fengexian"></include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingTop="5dp"
+        android:paddingBottom="2dp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/dmain_lay"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/dmain_iv"
+                    android:layout_width="wrap_content"
+                    android:src="@mipmap/blue_icon_home"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/dmain_tv"
+                    android:layout_width="wrap_content"
+                    android:text="首页"
+                    android:textSize="10sp"
+                    android:textColor="@color/blue_them"
+                    android:layout_marginTop="2dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/dorder_lay"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/dorder_iv"
+                    android:layout_width="wrap_content"
+                    android:src="@mipmap/gray_icon_indent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/dorder_tv"
+                    android:layout_width="wrap_content"
+                    android:text="订单"
+                    android:textSize="10sp"
+                    android:textColor="@color/color666"
+                    android:layout_marginTop="2dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/dmine_lay"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/dmine_iv"
+                    android:layout_width="wrap_content"
+                    android:src="@mipmap/icon_my"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/dmine_tv"
+                    android:layout_width="wrap_content"
+                    android:text="我的"
+                    android:textSize="10sp"
+                    android:textColor="@color/color666"
+                    android:layout_marginTop="2dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_left"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dynamicTitle_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color333"
+            android:textSize="17sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/dimen10"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/dynamicTime_tv"
+                android:layout_width="wrap_content"
+                android:textSize="13sp"
+                android:textColor="@color/color666"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/readNum_tv"
+                android:layout_width="wrap_content"
+                android:text="阅读量：0"
+                android:textSize="13sp"
+                android:layout_marginLeft="@dimen/chat_headsize"
+                android:textColor="@color/color666"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/topimg_iv"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/dimen10"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <com.tencent.smtt.sdk.WebView
+        android:id="@+id/web_view"
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_margin="@dimen/dp_12"
+        android:layout_height="match_parent"></com.tencent.smtt.sdk.WebView>
+</LinearLayout>

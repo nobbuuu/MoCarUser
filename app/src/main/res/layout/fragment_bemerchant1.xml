@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/citychoose_relay"
+        android:layout_width="match_parent"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/left_tv"
+            android:layout_width="wrap_content"
+            android:text="城市"
+            android:textSize="15sp"
+            android:textColor="@color/color333"
+            android:layout_marginLeft="@dimen/dimen_left"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/city_tv"
+            android:layout_width="wrap_content"
+            android:hint="请选择城市"
+            android:textSize="13sp"
+            android:layout_toRightOf="@+id/left_tv"
+            android:textColor="@color/color999"
+            android:layout_marginLeft="55dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@mipmap/next_forward"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_left"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <include layout="@layout/view_fengexian"></include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="商家名"
+            android:textSize="15sp"
+            android:textColor="@color/color333"
+            android:layout_marginLeft="@dimen/dimen_left"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/merchant_edt"
+            android:layout_width="match_parent"
+            android:hint="请输入商家名称"
+            android:textSize="13sp"
+            android:textColor="@color/color333"
+            android:layout_marginLeft="41dp"
+            android:background="@null"
+            android:paddingRight="@dimen/dimen_left"
+            android:textColorHint="@color/color999"
+            android:minLines="3"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <include layout="@layout/view_fengexian"></include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="联系人"
+            android:textSize="15sp"
+            android:textColor="@color/color333"
+            android:layout_marginLeft="@dimen/dimen_left"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/contacter_edt"
+            android:layout_width="match_parent"
+            android:hint="请输入联系人姓名"
+            android:textSize="13sp"
+            android:textColor="@color/color333"
+            android:textColorHint="@color/color999"
+            android:paddingRight="@dimen/dimen_left"
+            android:layout_marginLeft="41dp"
+            android:background="@null"
+            android:minLines="3"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <include layout="@layout/view_fengexian"></include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingBottom="@dimen/dimen15"
+        android:paddingTop="@dimen/dimen15"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="联系电话"
+            android:textSize="15sp"
+            android:textColor="@color/color333"
+            android:layout_marginLeft="@dimen/dimen_left"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/contact_edt"
+            android:layout_width="match_parent"
+            android:hint="请输入联系人手机号码"
+            android:textSize="13sp"
+            android:textColor="@color/color333"
+            android:layout_marginLeft="24dp"
+            android:paddingRight="@dimen/dimen_left"
+            android:textColorHint="@color/color999"
+            android:background="@null"
+            android:inputType="phone"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <include layout="@layout/view_fengexian"></include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="地址"
+            android:textSize="15sp"
+            android:textColor="@color/color333"
+            android:layout_marginLeft="@dimen/dimen_left"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/address_edt"
+            android:layout_width="match_parent"
+            android:hint="请输入公司的详细地址"
+            android:textSize="13sp"
+            android:textColor="@color/color333"
+            android:textColorHint="@color/color999"
+            android:layout_marginLeft="54dp"
+            android:background="@null"
+            android:minLines="3"
+            android:paddingRight="@dimen/dimen_left"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <include layout="@layout/view_fengexian"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="商家类型"
+            android:textSize="15sp"
+            android:textColor="@color/color333"
+            android:layout_marginLeft="@dimen/dimen_left"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/forths_iv"
+                android:layout_width="wrap_content"
+                android:src="@mipmap/information_icon_radio_selected"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="4s店"
+                android:layout_marginLeft="8dp"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/second_iv"
+                android:layout_width="wrap_content"
+                android:src="@mipmap/information_icon_radio_default"
+                android:layout_marginLeft="24dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="修理厂"
+                android:layout_marginRight="24dp"
+                android:layout_marginLeft="8dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <include layout="@layout/view_fengexian"></include>
+    <TextView
+        android:id="@+id/sure_tv"
+        style="@style/sure_btnstyle"
+        android:text="下一步"
+        android:layout_marginTop="36dp"
+        />
+</LinearLayout>

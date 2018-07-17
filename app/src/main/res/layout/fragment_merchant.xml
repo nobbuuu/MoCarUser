@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/blue_them"
+        android:layout_height="@dimen/title_height">
+        <RelativeLayout
+            android:id="@+id/bemerchant_relay"
+            android:layout_width="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="加盟"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:textSize="15sp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen_left"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="商家"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/titlesize"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="40dp">
+        <LinearLayout
+            android:id="@+id/pp_lay"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/pp_tv"
+                android:layout_width="wrap_content"
+                android:text="品牌"
+                android:textColor="@color/color333"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@mipmap/icon_unfolded"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="3dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/xj_lay"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/xj_tv"
+                android:layout_width="wrap_content"
+                android:text="星级"
+                android:textColor="@color/color333"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@mipmap/icon_unfolded"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="3dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.amap.api.maps.MapView
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.amap.api.maps.MapView>
+</LinearLayout>

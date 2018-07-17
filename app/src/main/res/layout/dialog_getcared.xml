@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/shape_white1"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tip_title"
+            android:layout_width="wrap_content"
+            android:text="取车提示"
+            android:layout_marginTop="22dp"
+            android:textSize="15sp"
+            android:textColor="@color/color333"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tip_content"
+            android:layout_width="wrap_content"
+            android:text="取车后，请开启QQ群聊与平台和用户链接\n否则将影响您的绩效考核"
+            android:gravity="center"
+            android:layout_marginTop="13dp"
+            android:lineSpacingExtra="3dp"
+            android:textSize="13sp"
+            android:textColor="@color/color666"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/know_tv"
+            android:layout_width="wrap_content"
+            android:text="知道了"
+            android:layout_marginTop="23dp"
+            android:textSize="15sp"
+            android:textColor="#157efb"
+            android:layout_marginBottom="14dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

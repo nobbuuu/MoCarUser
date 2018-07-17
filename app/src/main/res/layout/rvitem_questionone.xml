@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/quesOne_relay"
+        android:layout_width="match_parent"
+        android:paddingLeft="@dimen/dimen_left"
+        android:paddingRight="@dimen/dimen_left"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/quesOneName_tv"
+            android:layout_width="wrap_content"
+            android:text="订单"
+            android:textSize="15sp"
+            android:textColor="@color/color333"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/quesone_riv"
+            android:layout_width="wrap_content"
+            android:src="@mipmap/next_forward"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <include layout="@layout/view_fengexian"></include>
+    <com.dream.moka.CumstomView.MyRecyclerView
+        android:id="@+id/quesTwo_rv"
+        android:layout_width="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:layout_marginLeft="@dimen/dimen_left"
+        android:layout_marginRight="@dimen/dimen_left"
+        android:layout_height="wrap_content"></com.dream.moka.CumstomView.MyRecyclerView>
+</LinearLayout>

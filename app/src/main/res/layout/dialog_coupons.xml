@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_white1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#235ed0"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="领券"
+                android:textColor="@color/white"
+                android:textSize="23sp"/>
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/coupons_rv"
+            android:layout_width="match_parent"
+            android:layout_height="235dp"></android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/getCoupons_tv"
+            style="@style/sure_btnstyle"
+            android:layout_marginBottom="@dimen/dimen15"
+            android:layout_marginTop="@dimen/dimen15"
+            android:background="@drawable/shape_yellow"
+            android:text="一键领取"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/close_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="55dp"
+        android:src="@drawable/close"/>
+    </LinearLayout>
+</RelativeLayout>

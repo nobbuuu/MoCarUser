@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/root_lay"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+              tools:context=".UI.Activity.MainActivity">
+
+    <com.dream.moka.CumstomView.NoScrollHorizontalViewPager
+        android:id="@+id/main_vp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/main_botlay"
+        android:layout_weight="1"></com.dream.moka.CumstomView.NoScrollHorizontalViewPager>
+
+    <include layout="@layout/view_fengexian"></include>
+
+    <LinearLayout
+        android:id="@+id/main_botlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/shouye_lay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="8dp"
+            android:paddingTop="5dp">
+
+            <ImageView
+                android:id="@+id/shouye_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/blue_icon_home"/>
+
+            <TextView
+                android:id="@+id/shouye_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="首页"
+                android:textColor="@color/blue_them"
+                android:textSize="10sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/merchant_lay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="8dp"
+            android:paddingTop="5dp">
+
+            <ImageView
+                android:id="@+id/merchant_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/gray_icon_businessmen"/>
+
+            <TextView
+                android:id="@+id/merchant_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="商家"
+                android:textColor="@color/color333"
+                android:textSize="10sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bedriver_lay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="8dp"
+            android:visibility="gone"
+            android:paddingTop="5dp">
+
+            <ImageView
+                android:id="@+id/bedriver_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/gray_icon_driver"/>
+
+            <TextView
+                android:id="@+id/bedriver_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="成为司机"
+                android:textColor="@color/color333"
+                android:textSize="10sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/online_lay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="8dp"
+            android:paddingTop="5dp"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/online_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/gray_icon_expert"/>
+
+            <TextView
+                android:id="@+id/online_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="专家在线"
+                android:textColor="@color/color333"
+                android:textSize="10sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mine_lay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="8dp"
+            android:paddingTop="5dp">
+
+            <ImageView
+                android:id="@+id/mine_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_my"/>
+
+            <TextView
+                android:id="@+id/mine_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="我的"
+                android:textColor="@color/color333"
+                android:textSize="10sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

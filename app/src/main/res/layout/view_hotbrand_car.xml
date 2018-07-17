@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="热门品牌"
+            android:textColor="@color/color333"
+            android:textSize="12sp"/>
+
+        <com.dream.moka.CumstomView.MyGridView
+            android:id="@+id/hotcar_gv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:numColumns="5"
+            android:paddingRight="20dp">
+        </com.dream.moka.CumstomView.MyGridView>
+    </LinearLayout>
+
+</RelativeLayout>

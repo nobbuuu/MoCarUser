@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/moren_f2"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            android:background="@color/blue_them">
+
+            <RelativeLayout
+                android:id="@+id/back_relay"
+                android:layout_width="@dimen/dimen45"
+                android:layout_height="@dimen/dimen45"
+                android:layout_marginLeft="@dimen/dimen_left">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/nav_button_back" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="0.1元/KM保养"
+                android:textColor="@color/white"
+                android:textSize="@dimen/titlesize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:text="保养秘籍"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/fengexian3"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/car_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:maxLines="1"
+                    android:text=""
+                    android:textColor="@color/color333"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/openMyCar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/dimen_left"
+                    android:src="@mipmap/icon_down" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/baoyanggongli_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="保养间隔公里数"
+                    android:textColor="@color/color666"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/car_milesedt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:background="@null"
+                    android:minWidth="30dp"
+                    android:text=""
+                    android:textColor="@color/color333" />
+
+                <TextView
+                    android:id="@+id/edt_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:drawablePadding="3dp"
+                    android:drawableRight="@mipmap/icon_edit"
+                    android:gravity="center_vertical"
+                    android:minWidth="50dp"
+                    android:paddingRight="10dp"
+                    android:text="公里" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:background="@color/blue_them"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/car_icon"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="13dp"
+                android:background="@color/candy" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="12dp"
+                android:layout_toLeftOf="@+id/line2"
+                android:layout_toRightOf="@+id/car_icon"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="法拉利"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/car_name"
+                    android:layout_marginTop="12dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="汽车型号"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/right_lay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:inputType="text"
+                    android:text="2800km"
+                    android:textColor="@color/white"
+                    android:textCursorDrawable="@drawable/shape_cusor"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/currentkm_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginTop="@dimen/dimen_left"
+                        android:text="当前里程"
+                        android:textColor="@color/white"
+                        android:textSize="13sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/currentkm_tv"
+                        android:layout_toRightOf="@+id/currentkm_tv"
+                        android:src="@mipmap/icon_edit" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/line2"
+                android:layout_width="1dp"
+                android:layout_height="45.5dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:layout_toLeftOf="@+id/right_lay"
+                android:background="@color/fengexian3" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/fuwuGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/baseRadio"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:drawableLeft="@mipmap/icon_radio_default"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:text="  基础服务"
+                android:textColor="@color/color333" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#b2b2b2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/taocanRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:drawableLeft="@mipmap/icon_radio_default"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12dp"
+                    android:text="套餐服务（适用直接做大保养的四次套餐券）"
+                    android:textColor="@color/color333" />
+
+                <ImageView
+                    android:id="@+id/problem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="8dp"
+                    android:src="@mipmap/icon_problem"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white">
+
+                    <RelativeLayout
+                        android:layout_width="2dp"
+                        android:layout_height="14dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12dp"
+                        android:background="@color/fengexian4"></RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="22dp"
+                        android:text="保养项目"
+                        android:textColor="@color/color333"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <com.dream.moka.CumstomView.MyRecyclerView
+                    android:id="@+id/maintain_rv"
+                    android:layout_width="match_parent"
+                    android:scrollbars="none"
+                    android:overScrollMode="never"
+                    android:layout_height="match_parent"></com.dream.moka.CumstomView.MyRecyclerView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/white">
+
+                    <RelativeLayout
+                        android:layout_width="2dp"
+                        android:layout_height="14dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12dp"
+                        android:background="@color/fengexian4"></RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="22dp"
+                        android:text="服务流程"
+                        android:textColor="@color/color333"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/fengexian"></RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="@dimen/service_liu"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/yellow_img_process02"
+                        android:gravity="center"
+                        android:text="保养项目"
+                        android:textColor="@color/white"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="@dimen/service_liu"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/yellow_img_process"
+                        android:gravity="center"
+                        android:text="确认订单"
+                        android:textColor="@color/white"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="@dimen/service_liu"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/yellow_img_process"
+                        android:gravity="center"
+                        android:text="司机接车"
+                        android:textColor="@color/white"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="@dimen/service_liu"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/yellow_img_process"
+                        android:gravity="center"
+                        android:text="养护中"
+                        android:textColor="@color/white"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="@dimen/service_liu"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/yellow_img_process"
+                        android:gravity="center"
+                        android:text="司机送车"
+                        android:textColor="@color/white"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="12dp"
+                    android:text="实付"
+                    android:textColor="@color/color333"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:text="¥"
+                        android:textColor="@color/coloryellow" />
+
+                    <TextView
+                        android:id="@+id/shiFu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:text="0"
+                        android:textColor="@color/coloryellow"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="1dp"
+                    android:layout_height="11dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@color/fengexian2"
+                    android:visibility="gone"></RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="原价"
+                    android:textColor="@color/color666"
+                    android:textSize="12sp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/yuanJia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="0"
+                    android:textColor="@color/color666"
+                    android:textSize="12sp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/shengJia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_left"
+                    android:text="省¥90"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/sure_tv"
+                android:layout_width="127dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/blue_them"
+                android:gravity="center"
+                android:text="确认"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.dream.moka.CumstomView.numberview.VirtualKeyboardView
+        android:id="@+id/numberView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

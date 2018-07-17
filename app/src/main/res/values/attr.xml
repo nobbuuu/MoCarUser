@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PayPsdInputView">
+        <attr name="maxCount" format="dimension"/>
+        <attr name="radius" format="dimension"/>
+        <attr name="divideLineWidth" format="dimension"/>
+        <attr name="psdType" format="dimension"/>
+        <attr name="rectAngle" format="dimension"/>
+        <attr name="circleColor" format="color"/>
+        <attr name="bottomLineColor" format="color"/>
+        <attr name="divideLineColor" format="color"/>
+        <attr name="focusedColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="RatingBar">
+        <!--星星大小-->
+        <attr name="starImageSize" format="dimension"/>
+        <!--星星个数-->
+        <attr name="starCount" format="integer"/>
+        <!--星星空图-->
+        <attr name="starEmpty" format="reference"/>
+        <!--星星满图-->
+        <attr name="starFill" format="reference"/>
+        <!--星星半图-->
+        <attr name="starHalf" format="reference"/>
+        <!--是否可以点击评分-->
+        <attr name="clickable" format="boolean"/>
+    </declare-styleable>
+</resources>

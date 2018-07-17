@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/blue_them"
+        android:layout_height="@dimen/title_height">
+
+        <TextView
+            android:id="@+id/service_tv"
+            android:layout_width="wrap_content"
+            android:text="电话客服"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_left"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="专家在线"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/titlesize"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/car_relay"
+        android:layout_width="match_parent"
+        android:background="@color/blue_them"
+        android:layout_height="73dp">
+        <ImageView
+            android:id="@+id/car_icon"
+            android:layout_width="38dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dp"
+            android:layout_height="38dp"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/car_icon"
+            android:layout_marginLeft="14dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/line2"
+            android:layout_marginRight="12dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/car_name"
+                android:layout_width="wrap_content"
+                android:text="请先添加车辆"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:layout_gravity="center|left"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/car_typeTv"
+                android:layout_width="wrap_content"
+                android:text="递四方速递方式的撒发生的"
+                android:layout_below="@+id/car_name"
+                android:layout_marginTop="12dp"
+                android:textSize="13sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/carselect_iv"
+            android:layout_width="wrap_content"
+            android:src="@mipmap/nav_button_next"
+            android:layout_marginRight="@dimen/dimen_left"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/service_gv"
+        android:layout_width="match_parent"
+        android:numColumns="3"
+        android:background="@color/white"
+        android:paddingTop="15dp"
+        android:verticalSpacing="8dp"
+        android:layout_height="match_parent"></GridView>
+</LinearLayout>

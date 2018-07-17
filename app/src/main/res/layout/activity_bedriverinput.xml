@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/moren_f2"
+    android:orientation="vertical">
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"/>
+
+    <WebView
+        android:id="@+id/web_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <!--<ScrollView-->
+        <!--android:id="@+id/bedriver_sv"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:overScrollMode="never">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:focusable="true"-->
+                <!--android:focusableInTouchMode="true"-->
+                <!--android:orientation="vertical"-->
+                <!--android:paddingBottom="@dimen/dimen_left"-->
+                <!--android:paddingLeft="@dimen/dimen_left"-->
+                <!--android:paddingRight="@dimen/dimen_left">-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@color/white"-->
+                    <!--android:paddingBottom="@dimen/dimen_left"-->
+                    <!--android:paddingLeft="12dp"-->
+                    <!--android:paddingRight="12dp"-->
+                    <!--android:paddingTop="16dp">-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="2dp"-->
+                        <!--android:layout_height="14dp"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:background="@color/fengexian4"></RelativeLayout>-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_marginLeft="19dp"-->
+                        <!--android:text="个人信息"-->
+                        <!--android:textColor="@color/color333"-->
+                        <!--android:textSize="15sp" />-->
+                <!--</RelativeLayout>-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/imh_partinline"></ImageView>-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@color/white"-->
+                    <!--android:paddingBottom="8dp"-->
+                    <!--android:paddingLeft="16dp"-->
+                    <!--android:paddingRight="16dp"-->
+                    <!--android:paddingTop="8dp">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:text="姓名"-->
+                        <!--android:textColor="@color/color666" />-->
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/name"-->
+                        <!--style="@style/bedriver_edtstyle" />-->
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@color/white"-->
+                    <!--android:paddingBottom="8dp"-->
+                    <!--android:paddingLeft="16dp"-->
+                    <!--android:paddingRight="16dp"-->
+                    <!--android:paddingTop="8dp">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:text="身份证号码"-->
+                        <!--android:textColor="@color/color666" />-->
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/idCard"-->
+                        <!--style="@style/bedriver_edtstyle" />-->
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@color/white"-->
+                    <!--android:paddingBottom="8dp"-->
+                    <!--android:paddingLeft="16dp"-->
+                    <!--android:paddingRight="16dp"-->
+                    <!--android:paddingTop="8dp">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:text="籍贯"-->
+                        <!--android:textColor="@color/color666" />-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="@dimen/bedriver_height"-->
+                        <!--android:layout_marginLeft="135dp"-->
+                        <!--android:background="@drawable/shape_stroke_input"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--<EditText-->
+                            <!--android:id="@+id/jiguan"-->
+                            <!--style="@style/bedriver_edtstyle_nobg" />-->
+
+                        <!--<View-->
+                            <!--android:layout_width="1dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:background="@color/inputstoke"></View>-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="25dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_gravity="bottom"-->
+                            <!--android:layout_marginBottom="3dp"-->
+                            <!--android:src="@mipmap/icon_unfolded" />-->
+                    <!--</LinearLayout>-->
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@color/white"-->
+                    <!--android:paddingBottom="8dp"-->
+                    <!--android:paddingLeft="16dp"-->
+                    <!--android:paddingRight="16dp"-->
+                    <!--android:paddingTop="8dp">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:text="报名城市"-->
+                        <!--android:textColor="@color/color666" />-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="@dimen/bedriver_height"-->
+                        <!--android:layout_marginLeft="135dp"-->
+                        <!--android:background="@drawable/shape_stroke_input"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--<EditText-->
+                            <!--android:id="@+id/city"-->
+                            <!--style="@style/bedriver_edtstyle_nobg" />-->
+
+                        <!--<View-->
+                            <!--android:layout_width="1dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:background="@color/inputstoke"></View>-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="25dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_gravity="bottom"-->
+                            <!--android:layout_marginBottom="3dp"-->
+                            <!--android:src="@mipmap/icon_unfolded" />-->
+                    <!--</LinearLayout>-->
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@color/white"-->
+                    <!--android:paddingBottom="@dimen/dimen_left"-->
+                    <!--android:paddingLeft="12dp"-->
+                    <!--android:paddingRight="12dp"-->
+                    <!--android:paddingTop="16dp">-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="2dp"-->
+                        <!--android:layout_height="14dp"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:background="@color/fengexian4"></RelativeLayout>-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_marginLeft="19dp"-->
+                        <!--android:text="驾驶证信息"-->
+                        <!--android:textColor="@color/color333"-->
+                        <!--android:textSize="15sp" />-->
+                <!--</RelativeLayout>-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/imh_partinline"></ImageView>-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@color/white"-->
+                    <!--android:paddingBottom="8dp"-->
+                    <!--android:paddingLeft="16dp"-->
+                    <!--android:paddingRight="16dp"-->
+                    <!--android:paddingTop="8dp">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:text="驾驶证类型"-->
+                        <!--android:textColor="@color/color666" />-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="@dimen/bedriver_height"-->
+                        <!--android:layout_marginLeft="135dp"-->
+                        <!--android:background="@drawable/shape_stroke_input"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--<EditText-->
+                            <!--android:id="@+id/carCardType"-->
+                            <!--style="@style/bedriver_edtstyle_nobg" />-->
+
+                        <!--<View-->
+                            <!--android:layout_width="1dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:background="@color/inputstoke"></View>-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="25dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_gravity="bottom"-->
+                            <!--android:layout_marginBottom="3dp"-->
+                            <!--android:src="@mipmap/icon_unfolded" />-->
+                    <!--</LinearLayout>-->
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@color/white"-->
+                    <!--android:paddingBottom="8dp"-->
+                    <!--android:paddingLeft="16dp"-->
+                    <!--android:paddingRight="16dp"-->
+                    <!--android:paddingTop="8dp">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:text="驾驶证档案编号"-->
+                        <!--android:textColor="@color/color666" />-->
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/carCardNo"-->
+                        <!--style="@style/bedriver_edtstyle" />-->
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@color/white"-->
+                    <!--android:paddingBottom="8dp"-->
+                    <!--android:paddingLeft="16dp"-->
+                    <!--android:paddingRight="16dp"-->
+                    <!--android:paddingTop="8dp">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:text="初次领取驾驶证日期"-->
+                        <!--android:textColor="@color/color666" />-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="@dimen/bedriver_height"-->
+                        <!--android:layout_marginLeft="135dp"-->
+                        <!--android:background="@drawable/shape_stroke_input"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--<EditText-->
+                            <!--android:id="@+id/carCardTime"-->
+                            <!--style="@style/bedriver_edtstyle_nobg" />-->
+
+                        <!--<View-->
+                            <!--android:layout_width="1dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:background="@color/inputstoke"></View>-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="25dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_gravity="bottom"-->
+                            <!--android:layout_marginBottom="3dp"-->
+                            <!--android:src="@mipmap/icon_unfolded" />-->
+                    <!--</LinearLayout>-->
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@color/white"-->
+                    <!--android:paddingBottom="@dimen/dimen_left"-->
+                    <!--android:paddingLeft="12dp"-->
+                    <!--android:paddingRight="12dp"-->
+                    <!--android:paddingTop="16dp">-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="2dp"-->
+                        <!--android:layout_height="14dp"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:background="@color/fengexian4"></RelativeLayout>-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_marginLeft="19dp"-->
+                        <!--android:text="其他信息"-->
+                        <!--android:textColor="@color/color333"-->
+                        <!--android:textSize="15sp" />-->
+                <!--</RelativeLayout>-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/imh_partinline"></ImageView>-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@color/white"-->
+                    <!--android:paddingBottom="8dp"-->
+                    <!--android:paddingLeft="16dp"-->
+                    <!--android:paddingRight="16dp"-->
+                    <!--android:paddingTop="8dp">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:text="有无代驾经验"-->
+                        <!--android:textColor="@color/color666" />-->
+
+                    <!--<RadioGroup-->
+                        <!--android:id="@+id/daijiaGroup"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:orientation="horizontal">-->
+
+
+                        <!--<RadioButton-->
+                            <!--android:id="@+id/yes"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:button="@drawable/select_information_icon_radio"-->
+                            <!--android:checked="true"-->
+                            <!--android:drawablePadding="10dp"-->
+                            <!--android:text="有"-->
+                            <!--android:textColor="@color/color666" />-->
+
+                        <!--<RadioButton-->
+                            <!--android:id="@+id/no"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginLeft="10dp"-->
+                            <!--android:button="@drawable/select_information_icon_radio"-->
+                            <!--android:text="无"-->
+                            <!--android:textColor="@color/color666" />-->
+
+                    <!--</RadioGroup>-->
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@color/white"-->
+                    <!--android:paddingBottom="8dp"-->
+                    <!--android:paddingLeft="16dp"-->
+                    <!--android:paddingRight="16dp"-->
+                    <!--android:paddingTop="8dp">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:text="曾就职于平台"-->
+                        <!--android:textColor="@color/color666" />-->
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/pingtai"-->
+                        <!--style="@style/bedriver_edtstyle" />-->
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@color/white"-->
+                    <!--android:paddingBottom="8dp"-->
+                    <!--android:paddingLeft="16dp"-->
+                    <!--android:paddingRight="16dp"-->
+                    <!--android:paddingTop="8dp">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:text="历史接单数量"-->
+                        <!--android:textColor="@color/color666" />-->
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/historyNumber"-->
+                        <!--style="@style/bedriver_edtstyle" />-->
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@color/white"-->
+                    <!--android:paddingBottom="8dp"-->
+                    <!--android:paddingLeft="16dp"-->
+                    <!--android:paddingRight="16dp"-->
+                    <!--android:paddingTop="8dp">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:text="每天可接单时长"-->
+                        <!--android:textColor="@color/color666" />-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="@dimen/bedriver_height"-->
+                        <!--android:layout_marginLeft="135dp"-->
+                        <!--android:background="@drawable/shape_stroke_input"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--<EditText style="@style/bedriver_edtstyle_nobg" />-->
+
+                        <!--<View-->
+                            <!--android:layout_width="1dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:background="@color/inputstoke"></View>-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="25dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_gravity="bottom"-->
+                            <!--android:layout_marginBottom="3dp"-->
+                            <!--android:src="@mipmap/icon_unfolded" />-->
+                    <!--</LinearLayout>-->
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@color/white"-->
+                    <!--android:paddingBottom="8dp"-->
+                    <!--android:paddingLeft="16dp"-->
+                    <!--android:paddingRight="16dp"-->
+                    <!--android:paddingTop="8dp">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:text="全职兼职"-->
+                        <!--android:textColor="@color/color666" />-->
+
+                    <!--<RadioGroup-->
+                        <!--android:id="@+id/quanzhiGroup"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:orientation="horizontal">-->
+
+
+                        <!--<RadioButton-->
+                            <!--android:id="@+id/qzYes"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:drawablePadding="10dp"-->
+                            <!--android:button="@drawable/select_information_icon_radio"-->
+                            <!--android:checked="true"-->
+                            <!--android:text="全职"-->
+                            <!--android:textColor="@color/color666" />-->
+
+                        <!--<RadioButton-->
+                            <!--android:id="@+id/qzNo"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:drawablePadding="10dp"-->
+                            <!--android:layout_marginLeft="27dp"-->
+                            <!--android:button="@drawable/select_information_icon_radio"-->
+                            <!--android:text="兼职"-->
+                            <!--android:textColor="@color/color666" />-->
+
+                    <!--</RadioGroup>-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_centerVertical="true">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:src="@mipmap/information_icon_radio_selected" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginLeft="10dp"-->
+
+                            <!--android:textColor="@color/color666" />-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+
+                            <!--android:src="@mipmap/information_icon_radio_default" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                             <!--/>-->
+                    <!--</LinearLayout>-->
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@color/white"-->
+                    <!--android:paddingBottom="8dp"-->
+                    <!--android:paddingLeft="16dp"-->
+                    <!--android:paddingRight="16dp"-->
+                    <!--android:paddingTop="8dp">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:text="本职工作"-->
+                        <!--android:textColor="@color/color666" />-->
+
+                    <!--<EditText style="@style/bedriver_edtstyle" />-->
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:background="@color/white"-->
+                    <!--android:paddingLeft="12dp">-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="2dp"-->
+                        <!--android:layout_height="14dp"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:background="@color/fengexian4"></RelativeLayout>-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_marginLeft="19dp"-->
+                        <!--android:layout_marginTop="15dp"-->
+                        <!--android:text="证件照片"-->
+                        <!--android:textColor="@color/color333"-->
+                        <!--android:textSize="15sp" />-->
+                <!--</RelativeLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@color/white"-->
+                    <!--android:paddingBottom="16dp"-->
+                    <!--android:paddingLeft="30dp"-->
+                    <!--android:paddingRight="30dp"-->
+                    <!--android:paddingTop="16dp">-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="80dp"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:background="@drawable/shape_xuxian_coner">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent" />-->
+
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_centerInParent="true"-->
+                            <!--android:gravity="center"-->
+                            <!--android:orientation="vertical">-->
+
+                            <!--<ImageView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:src="@mipmap/icon_sheet" />-->
+
+                            <!--<TextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_marginTop="2dp"-->
+                                <!--android:text="身份证"-->
+                                <!--android:textColor="@color/color666"-->
+                                <!--android:textSize="13sp" />-->
+                        <!--</LinearLayout>-->
+                    <!--</RelativeLayout>-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="80dp"-->
+                        <!--android:layout_marginLeft="20dp"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:background="@drawable/shape_xuxian_coner">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent" />-->
+
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_centerInParent="true"-->
+                            <!--android:gravity="center"-->
+                            <!--android:orientation="vertical">-->
+
+                            <!--<ImageView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:src="@mipmap/icon_sheet" />-->
+
+                            <!--<TextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_marginTop="2dp"-->
+                                <!--android:text="驾驶证"-->
+                                <!--android:textColor="@color/color666"-->
+                                <!--android:textSize="13sp" />-->
+                        <!--</LinearLayout>-->
+                    <!--</RelativeLayout>-->
+                <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+
+        <!--</LinearLayout>-->
+    <!--</ScrollView>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/bedriver_tv"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="48dp"-->
+        <!--android:background="@color/blue_them"-->
+        <!--android:gravity="center"-->
+        <!--android:text="提交报名"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="15sp" />-->
+</LinearLayout>

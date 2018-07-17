@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="10dp"
+              android:gravity="center_vertical">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="14dp"
+        android:src="@drawable/icon_avatar"/>
+
+    <ImageView
+        android:id="@+id/leftv_voice"
+        android:layout_width="14dp"
+        android:layout_height="18dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/left_voice"/>
+
+    <TextView
+        android:id="@+id/leftv_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:text="2'"
+        android:textSize="15sp"/>
+</LinearLayout>

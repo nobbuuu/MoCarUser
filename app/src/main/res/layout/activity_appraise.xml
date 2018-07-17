@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ratingbar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/moren_f2"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="@dimen/dimen_left"
+        android:layout_marginTop="14dp"
+        android:text="服务星级评价"
+        android:textColor="@color/color333"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dimen_left"
+        android:paddingRight="@dimen/dimen_left">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen40">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="对服务管家服务"
+                android:textColor="@color/color333"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/ptnum_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:text="5.0"
+                android:textColor="@color/color666"
+                android:textSize="15.5sp"
+                android:visibility="gone" />
+
+            <com.dream.moka.Utils.RatingBar
+                android:id="@+id/ptstar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                ratingbar:clickable="true"
+                ratingbar:starCount="5"
+                ratingbar:starEmpty="@mipmap/icon_heartr_default"
+                ratingbar:starFill="@mipmap/icon_heartr_selected"
+                ratingbar:starImageSize="20dp" />
+        </RelativeLayout>
+
+        <include layout="@layout/view_fengexian"></include>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen40">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="对接车司机服务"
+                android:textColor="@color/color333"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/jdrivernum_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:text="5.0"
+                android:textColor="@color/color666"
+                android:textSize="15.5sp"
+                android:visibility="gone" />
+
+            <com.dream.moka.Utils.RatingBar
+                android:id="@+id/jcstar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                ratingbar:clickable="true"
+                ratingbar:starCount="5"
+                ratingbar:starEmpty="@mipmap/icon_heartr_default"
+                ratingbar:starFill="@mipmap/icon_heartr_selected"
+                ratingbar:starImageSize="20dp" />
+        </RelativeLayout>
+
+        <include layout="@layout/view_fengexian"></include>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen40">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="对送车司机服务"
+                android:textColor="@color/color333"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/sdrivernum_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:text="5.0"
+                android:textColor="@color/color666"
+                android:textSize="15.5sp"
+                android:visibility="gone" />
+
+            <com.dream.moka.Utils.RatingBar
+                android:id="@+id/sdstar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                ratingbar:clickable="true"
+                ratingbar:starCount="5"
+                ratingbar:starEmpty="@mipmap/icon_heartr_default"
+                ratingbar:starFill="@mipmap/icon_heartr_selected"
+                ratingbar:starImageSize="20dp" />
+        </RelativeLayout>
+
+        <include layout="@layout/view_fengexian"></include>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen40">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="对维修服务"
+                android:textColor="@color/color333"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/wxservicenum_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:text="5.0"
+                android:textColor="@color/color666"
+                android:textSize="15.5sp"
+                android:visibility="gone" />
+
+            <com.dream.moka.Utils.RatingBar
+                android:id="@+id/wxstar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                ratingbar:clickable="true"
+                ratingbar:starCount="5"
+                ratingbar:starEmpty="@mipmap/icon_heartr_default"
+                ratingbar:starFill="@mipmap/icon_heartr_selected"
+                ratingbar:starImageSize="20dp" />
+        </RelativeLayout>
+
+        <include layout="@layout/view_fengexian"></include>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen40">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="对洗车服务"
+                android:textColor="@color/color333"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/xicar_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:text="5.0"
+                android:textColor="@color/color666"
+                android:textSize="15.5sp"
+                android:visibility="gone" />
+
+            <com.dream.moka.Utils.RatingBar
+                android:id="@+id/xistar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                ratingbar:clickable="true"
+                ratingbar:starCount="5"
+                ratingbar:starEmpty="@mipmap/icon_heartr_default"
+                ratingbar:starFill="@mipmap/icon_heartr_selected"
+                ratingbar:starImageSize="20dp" />
+        </RelativeLayout>
+
+        <include layout="@layout/view_fengexian"></include>
+
+        <TextView
+            android:id="@+id/fabu_tv"
+            style="@style/sure_btnstyle"
+            android:layout_marginLeft="55dp"
+            android:layout_marginRight="55dp"
+            android:layout_marginTop="52dp"
+            android:text="发布" />
+    </LinearLayout>
+
+</LinearLayout>

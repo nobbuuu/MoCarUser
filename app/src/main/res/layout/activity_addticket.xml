@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/root_lay"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:focusable="true"
+              android:focusableInTouchMode="true"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/address_relay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_left"
+            android:text="单位名称"
+            android:textColor="@color/color333"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/unitName_edt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="@dimen/dimen_left"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="请输入单位名称"
+            android:textSize="13sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/moren_e5"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_left"
+            android:text="纳税人识别号"
+            android:textColor="@color/color333"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/peopleCode_edt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="@dimen/dimen_left"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="请输入纳税人识别号"
+            android:textSize="13sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/moren_e5"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_left"
+            android:text="注册地址"
+            android:textColor="@color/color333"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/regiAddress_edt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="@dimen/dimen_left"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="请输入注册地址"
+            android:textSize="13sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/moren_f2"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_left"
+            android:text="注册电话"
+            android:textColor="@color/color333"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/regiPhone_edt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="@dimen/dimen_left"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="请输入注册电话"
+            android:textSize="13sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/moren_e5"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_left"
+            android:text="开户银行"
+            android:textColor="@color/color333"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/bankName_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/dimen_left"
+            android:layout_marginRight="@dimen/dimen_left"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="请选择开户行"
+            android:textSize="13sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/moren_e5"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_left"
+            android:text="银行账号"
+            android:textColor="@color/color333"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/bankNum_edt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="@dimen/dimen_left"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="请输入银行账号"
+            android:textSize="13sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/moren_e5"></View>
+</LinearLayout>

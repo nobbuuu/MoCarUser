@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/shape_white1"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tip_title"
+            android:layout_width="wrap_content"
+            android:text="温馨提示"
+            android:layout_marginTop="22dp"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tip_content"
+            android:layout_width="wrap_content"
+            android:text="退回押金后您将不能再享受司机代驾收入"
+            android:gravity="center"
+            android:layout_marginTop="14dp"
+            android:lineSpacingExtra="3dp"
+            android:textSize="13sp"
+            android:textColor="@color/color333"
+            android:layout_marginBottom="11dp"
+            android:layout_height="wrap_content" />
+        <include layout="@layout/view_fengexian"></include>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <TextView
+                android:id="@+id/tip_nav"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="确定退回"
+                android:textColor="#9B9B9B"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:layout_height="match_parent" />
+            <View
+                android:layout_width="1dp"
+                android:background="#D6D6D6"
+                android:layout_height="match_parent"></View>
+            <TextView
+                android:id="@+id/tip_positive"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="暂不退回"
+                android:textColor="@color/version_liji"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
